@@ -1,4 +1,4 @@
-﻿using Localization.Resources.AbpUi;
+using Localization.Resources.AbpUi;
 using AbpScanProject.Localization;
 using Volo.Abp.Account;
 using Volo.Abp.SettingManagement;
@@ -12,6 +12,13 @@ using Volo.Abp.LanguageManagement;
 using Volo.Saas.Host;
 using Volo.Abp.Gdpr;
 using Volo.Abp.OpenIddict;
+using Volo.Blogging;
+using Volo.Blogging.Admin;
+using Volo.Chat;
+using Volo.CmsKit;
+using Volo.Docs;
+using Volo.Docs.Admin;
+using Volo.FileManagement;
 
 namespace AbpScanProject;
 
@@ -29,7 +36,14 @@ namespace AbpScanProject;
     typeof(AbpAccountPublicHttpApiModule),
     typeof(AbpFeatureManagementHttpApiModule)
     )]
-public class AbpScanProjectHttpApiModule : AbpModule
+[DependsOn(typeof(BloggingHttpApiModule))]
+    [DependsOn(typeof(BloggingAdminHttpApiModule))]
+    [DependsOn(typeof(ChatHttpApiModule))]
+    [DependsOn(typeof(CmsKitHttpApiModule))]
+    [DependsOn(typeof(DocsHttpApiModule))]
+    [DependsOn(typeof(DocsAdminHttpApiModule))]
+    [DependsOn(typeof(FileManagementHttpApiModule))]
+    public class AbpScanProjectHttpApiModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)
     {

@@ -44,6 +44,7 @@ using Volo.Abp.Account.Public.Web.ExternalProviders;
 using Volo.Abp.Account.Public.Web;
 using Volo.Abp.Account.Public.Web.Impersonation;
 using Volo.Saas.Host;
+using Volo.Chat;
 
 namespace AbpScanProject;
 
@@ -60,7 +61,8 @@ namespace AbpScanProject;
     typeof(AbpSwashbuckleModule),
     typeof(AbpAspNetCoreSerilogModule)
     )]
-public class AbpScanProjectHttpApiHostModule : AbpModule
+[DependsOn(typeof(ChatSignalRModule))]
+    public class AbpScanProjectHttpApiHostModule : AbpModule
 {
     public override void PreConfigureServices(ServiceConfigurationContext context)
     {

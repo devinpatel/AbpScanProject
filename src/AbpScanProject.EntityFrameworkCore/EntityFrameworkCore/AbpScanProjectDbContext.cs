@@ -17,6 +17,11 @@ using Volo.Saas.EntityFrameworkCore;
 using Volo.Saas.Editions;
 using Volo.Saas.Tenants;
 using Volo.Abp.Gdpr;
+using Volo.Blogging.EntityFrameworkCore;
+using Volo.Chat.EntityFrameworkCore;
+using Volo.CmsKit.EntityFrameworkCore;
+using Volo.Docs.EntityFrameworkCore;
+using Volo.FileManagement.EntityFrameworkCore;
 
 namespace AbpScanProject.EntityFrameworkCore;
 
@@ -93,5 +98,10 @@ public class AbpScanProjectDbContext :
         //    b.ConfigureByConvention(); //auto configure for the base class props
         //    //...
         //});
-    }
+        builder.ConfigureBlogging();
+            builder.ConfigureChat();
+            builder.ConfigureCmsKit();
+            builder.ConfigureDocs();
+            builder.ConfigureFileManagement();
+        }
 }

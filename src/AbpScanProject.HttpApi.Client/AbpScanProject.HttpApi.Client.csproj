@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <Import Project="..\..\common.props" />
 
@@ -14,8 +14,15 @@
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp.PermissionManagement.HttpApi.Client" Version="8.3.2" />
-    <PackageReference Include="Volo.Abp.FeatureManagement.HttpApi.Client" Version="8.3.2" />
-    <PackageReference Include="Volo.Abp.SettingManagement.HttpApi.Client" Version="8.3.2" />
+    <PackageReference Include="Volo.FileManagement.HttpApi.Client" Version="8.3.2" />
+    <ProjectReference Include="..\..\modules\Volo.FeatureManagement\src\Volo.Abp.FeatureManagement.HttpApi.Client\Volo.Abp.FeatureManagement.HttpApi.Client.csproj" />
+    <ProjectReference Include="..\..\modules\Volo.SettingManagement\src\Volo.Abp.SettingManagement.HttpApi.Client\Volo.Abp.SettingManagement.HttpApi.Client.csproj" />
+    <PackageReference Include="Volo.Chat.HttpApi.Client" Version="8.3.2" />
+    <ProjectReference Include="..\..\modules\Volo.Docs\src\Volo.Docs.Admin.HttpApi.Client\Volo.Docs.Admin.HttpApi.Client.csproj" />
+    <ProjectReference Include="..\..\modules\Volo.Docs\src\Volo.Docs.HttpApi.Client\Volo.Docs.HttpApi.Client.csproj" />
+    <ProjectReference Include="..\..\modules\Volo.CmsKit\src\Volo.CmsKit.HttpApi.Client\Volo.CmsKit.HttpApi.Client.csproj" />
+    <ProjectReference Include="..\..\modules\Volo.Blogging\src\Volo.Blogging.Admin.HttpApi.Client\Volo.Blogging.Admin.HttpApi.Client.csproj" />
+    <ProjectReference Include="..\..\modules\Volo.Blogging\src\Volo.Blogging.HttpApi.Client\Volo.Blogging.HttpApi.Client.csproj" />
   </ItemGroup>
 
   <ItemGroup>

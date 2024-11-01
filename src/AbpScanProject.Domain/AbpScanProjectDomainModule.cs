@@ -20,6 +20,11 @@ using Volo.Abp.Commercial.SuiteTemplates;
 using Volo.Abp.LanguageManagement;
 using Volo.Saas;
 using Volo.Abp.Gdpr;
+using Volo.Blogging;
+using Volo.Chat;
+using Volo.CmsKit;
+using Volo.Docs;
+using Volo.FileManagement;
 
 namespace AbpScanProject;
 
@@ -41,7 +46,12 @@ namespace AbpScanProject;
     typeof(AbpGdprDomainModule),
     typeof(BlobStoringDatabaseDomainModule)
     )]
-public class AbpScanProjectDomainModule : AbpModule
+[DependsOn(typeof(BloggingDomainModule))]
+    [DependsOn(typeof(ChatDomainModule))]
+    [DependsOn(typeof(CmsKitDomainModule))]
+    [DependsOn(typeof(DocsDomainModule))]
+    [DependsOn(typeof(FileManagementDomainModule))]
+    public class AbpScanProjectDomainModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)
     {

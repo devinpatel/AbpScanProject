@@ -16,6 +16,11 @@ using Volo.Abp.LanguageManagement;
 using Volo.Saas;
 using Volo.Abp.Gdpr;
 using Volo.Abp.GlobalFeatures;
+using Volo.Blogging;
+using Volo.Chat;
+using Volo.CmsKit;
+using Volo.Docs;
+using Volo.FileManagement;
 
 namespace AbpScanProject;
 
@@ -33,7 +38,12 @@ namespace AbpScanProject;
     typeof(AbpGlobalFeaturesModule),
     typeof(BlobStoringDatabaseDomainSharedModule)
     )]
-public class AbpScanProjectDomainSharedModule : AbpModule
+[DependsOn(typeof(BloggingDomainSharedModule))]
+    [DependsOn(typeof(ChatDomainSharedModule))]
+    [DependsOn(typeof(CmsKitDomainSharedModule))]
+    [DependsOn(typeof(DocsDomainSharedModule))]
+    [DependsOn(typeof(FileManagementDomainSharedModule))]
+    public class AbpScanProjectDomainSharedModule : AbpModule
 {
     public override void PreConfigureServices(ServiceConfigurationContext context)
     {

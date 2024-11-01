@@ -15,6 +15,11 @@ using Volo.Abp.BlobStoring.Database.EntityFrameworkCore;
 using Volo.Abp.LanguageManagement.EntityFrameworkCore;
 using Volo.Saas.EntityFrameworkCore;
 using Volo.Abp.Gdpr;
+using Volo.Blogging.EntityFrameworkCore;
+using Volo.Chat.EntityFrameworkCore;
+using Volo.CmsKit.EntityFrameworkCore;
+using Volo.Docs.EntityFrameworkCore;
+using Volo.FileManagement.EntityFrameworkCore;
 
 namespace AbpScanProject.EntityFrameworkCore;
 
@@ -33,7 +38,12 @@ namespace AbpScanProject.EntityFrameworkCore;
     typeof(AbpGdprEntityFrameworkCoreModule),
     typeof(BlobStoringDatabaseEntityFrameworkCoreModule)
     )]
-public class AbpScanProjectEntityFrameworkCoreModule : AbpModule
+[DependsOn(typeof(BloggingEntityFrameworkCoreModule))]
+    [DependsOn(typeof(ChatEntityFrameworkCoreModule))]
+    [DependsOn(typeof(CmsKitEntityFrameworkCoreModule))]
+    [DependsOn(typeof(DocsEntityFrameworkCoreModule))]
+    [DependsOn(typeof(FileManagementEntityFrameworkCoreModule))]
+    public class AbpScanProjectEntityFrameworkCoreModule : AbpModule
 {
     public override void PreConfigureServices(ServiceConfigurationContext context)
     {

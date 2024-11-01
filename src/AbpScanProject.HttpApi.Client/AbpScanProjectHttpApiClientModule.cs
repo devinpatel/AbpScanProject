@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.Account;
 using Volo.Abp.Modularity;
 using Volo.Abp.PermissionManagement;
@@ -11,6 +11,13 @@ using Volo.Abp.LanguageManagement;
 using Volo.Saas.Host;
 using Volo.Abp.Gdpr;
 using Volo.Abp.OpenIddict;
+using Volo.Blogging;
+using Volo.Blogging.Admin;
+using Volo.Chat;
+using Volo.CmsKit;
+using Volo.Docs;
+using Volo.Docs.Admin;
+using Volo.FileManagement;
 
 namespace AbpScanProject;
 
@@ -28,7 +35,14 @@ namespace AbpScanProject;
     typeof(AbpGdprHttpApiClientModule),
     typeof(AbpSettingManagementHttpApiClientModule)
 )]
-public class AbpScanProjectHttpApiClientModule : AbpModule
+[DependsOn(typeof(BloggingHttpApiClientModule))]
+    [DependsOn(typeof(BloggingAdminHttpApiClientModule))]
+    [DependsOn(typeof(ChatHttpApiClientModule))]
+    [DependsOn(typeof(CmsKitHttpApiClientModule))]
+    [DependsOn(typeof(DocsHttpApiClientModule))]
+    [DependsOn(typeof(DocsAdminHttpApiClientModule))]
+    [DependsOn(typeof(FileManagementHttpApiClientModule))]
+    public class AbpScanProjectHttpApiClientModule : AbpModule
 {
     public const string RemoteServiceName = "Default";
 
