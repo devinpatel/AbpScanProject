@@ -1,0 +1,13 @@
+﻿{
+  "applications": {
+    "AbpScanProject.HttpApi.Host": {
+      "type": "dotnet-project",
+      "launchUrl": "https://localhost:44350",
+      "path": "../../../src/AbpScanProject.HttpApi.Host/AbpScanProject.HttpApi.Host.csproj",
+      "kubernetesService": ".*-httpapihost$",
+      "execution": {
+        "order": 4
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.LeptonXTheme": {
+      "version": "3.3.2",
+      "isInstalled": true
+    },
+    "Volo.Abp.LanguageManagement": {
+      "version": "8.3.2",
+      "isInstalled": true
+    },
+    "Volo.Abp.OpenIddict.Pro": {
+      "version": "8.3.2",
+      "isInstalled": true
+    },
+    "Volo.Abp.Gdpr": {
+      "version": "8.3.2",
+      "isInstalled": true
+    },
+    "Volo.Abp.AuditLogging.Pro": {
+      "version": "8.3.2",
+      "isInstalled": true
+    },
+    "Volo.Saas": {
+      "version": "8.3.2",
+      "isInstalled": true
+    },
+    "Volo.Abp.Identity.Pro": {
+      "version": "8.3.2",
+      "isInstalled": true
+    },
+    "Volo.Abp.Account.Pro": {
+      "version": "8.3.2",
+      "isInstalled": true
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "AbpScanProject.Application": {
+      "path": "src/AbpScanProject.Application/AbpScanProject.Application.abppkg",
+      "folder": "src"
+    },
+    "AbpScanProject.Application.Tests": {
+      "path": "test/AbpScanProject.Application.Tests/AbpScanProject.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "AbpScanProject.Domain.Shared": {
+      "path": "src/AbpScanProject.Domain.Shared/AbpScanProject.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "AbpScanProject.Application.Contracts": {
+      "path": "src/AbpScanProject.Application.Contracts/AbpScanProject.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "AbpScanProject.HttpApi": {
+      "path": "src/AbpScanProject.HttpApi/AbpScanProject.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "AbpScanProject.HttpApi.Client": {
+      "path": "src/AbpScanProject.HttpApi.Client/AbpScanProject.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "AbpScanProject.EntityFrameworkCore.Tests": {
+      "path": "test/AbpScanProject.EntityFrameworkCore.Tests/AbpScanProject.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "AbpScanProject.EntityFrameworkCore": {
+      "path": "src/AbpScanProject.EntityFrameworkCore/AbpScanProject.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "AbpScanProject.TestBase": {
+      "path": "test/AbpScanProject.TestBase/AbpScanProject.TestBase.abppkg",
+      "folder": "test"
+    },
+    "AbpScanProject.Domain.Tests": {
+      "path": "test/AbpScanProject.Domain.Tests/AbpScanProject.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "AbpScanProject.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/AbpScanProject.HttpApi.Client.ConsoleTestApp/AbpScanProject.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "AbpScanProject.DbMigrator": {
+      "path": "src/AbpScanProject.DbMigrator/AbpScanProject.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "AbpScanProject.HttpApi.Host": {
+      "path": "src/AbpScanProject.HttpApi.Host/AbpScanProject.HttpApi.Host.abppkg",
+      "folder": "src"
+    },
+    "AbpScanProject.Domain": {
+      "path": "src/AbpScanProject.Domain/AbpScanProject.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}
