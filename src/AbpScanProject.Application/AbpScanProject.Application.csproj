@@ -9,12 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\modules\Volo.Docs\src\Volo.Docs.Admin.Application\Volo.Docs.Admin.Application.csproj" />
+    <ProjectReference Include="..\..\modules\Volo.Docs\src\Volo.Docs.Application\Volo.Docs.Application.csproj" />
     <ProjectReference Include="..\AbpScanProject.Domain\AbpScanProject.Domain.csproj" />
     <ProjectReference Include="..\AbpScanProject.Application.Contracts\AbpScanProject.Application.Contracts.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="8.3.2" />
+    <PackageReference Include="Volo.FileManagement.Application" Version="8.3.2" />
     <ProjectReference Include="..\..\modules\Volo.FeatureManagement\src\Volo.Abp.FeatureManagement.Application\Volo.Abp.FeatureManagement.Application.csproj" />
     <ProjectReference Include="..\..\modules\Volo.SettingManagement\src\Volo.Abp.SettingManagement.Application\Volo.Abp.SettingManagement.Application.csproj" />
     <PackageReference Include="Volo.Abp.Account.Pro.Public.Application" Version="8.3.2" />
