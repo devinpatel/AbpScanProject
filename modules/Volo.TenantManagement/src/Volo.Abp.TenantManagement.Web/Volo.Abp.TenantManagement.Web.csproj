@@ -34,6 +34,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\Volo.FeatureManagement\src\Volo.Abp.FeatureManagement.Web\Volo.Abp.FeatureManagement.Web.csproj" />
     <ProjectReference Include="..\Volo.Abp.TenantManagement.Application.Contracts\Volo.Abp.TenantManagement.Application.Contracts.csproj" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" />
     <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.Bootstrap" VersionOverride="8.3.2" />
     <PackageReference Include="Volo.Abp.AutoMapper" VersionOverride="8.3.2" />
   </ItemGroup>

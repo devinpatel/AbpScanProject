@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Volo.Docs.Application.Contracts\Volo.Docs.Application.Contracts.csproj" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" />
     <PackageReference Include="Volo.Abp.AspNetCore.Mvc" VersionOverride="8.3.2" />
   </ItemGroup>
 

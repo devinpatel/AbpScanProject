@@ -17,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Volo.Abp.TenantManagement.Application.Contracts\Volo.Abp.TenantManagement.Application.Contracts.csproj" />
     <ProjectReference Include="..\Volo.Abp.TenantManagement.Domain\Volo.Abp.TenantManagement.Domain.csproj" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" />
     <PackageReference Include="Volo.Abp.Ddd.Application" VersionOverride="8.3.2" />
   </ItemGroup>
 

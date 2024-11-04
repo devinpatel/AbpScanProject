@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Volo.Blogging.Domain\Volo.Blogging.Domain.csproj" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" />
     <PackageReference Include="Volo.Abp.EntityFrameworkCore" VersionOverride="8.3.2" />
     <PackageReference Include="Volo.Abp.Users.EntityFrameworkCore" VersionOverride="8.3.2" />
   </ItemGroup>
