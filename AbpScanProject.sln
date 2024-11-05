@@ -224,6 +224,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbpScanProject.HttpApi.Clie
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbpScanProject.TestBase", "test\AbpScanProject.TestBase\AbpScanProject.TestBase.csproj", "{18853474-590E-4CBE-8157-5800519E29C6}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.Account.Application", "modules\account\src\Volo.Abp.Account.Application\Volo.Abp.Account.Application.csproj", "{1FCCB7FD-1120-48C0-BB32-34B6AB26F5DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Volo.Account", "Volo.Account", "{E97322CC-CE84-4B48-ABB4-87D0DE1C3350}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Volo.BlobStoring", "Volo.BlobStoring", "{82ECC261-1ECE-4098-91C5-76BB4ED247BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlobStoring.Database.Host.ConsoleApp.ConsoleApp", "modules\blob-storing-database\host\BlobStoring.Database.Host.ConsoleApp\src\BlobStoring.Database.Host.ConsoleApp.ConsoleApp\BlobStoring.Database.Host.ConsoleApp.ConsoleApp.csproj", "{9F7BC6DD-5889-46C1-9DE7-9EAAB96F949D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -626,6 +634,14 @@ Global
 		{18853474-590E-4CBE-8157-5800519E29C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18853474-590E-4CBE-8157-5800519E29C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18853474-590E-4CBE-8157-5800519E29C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FCCB7FD-1120-48C0-BB32-34B6AB26F5DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FCCB7FD-1120-48C0-BB32-34B6AB26F5DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FCCB7FD-1120-48C0-BB32-34B6AB26F5DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FCCB7FD-1120-48C0-BB32-34B6AB26F5DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F7BC6DD-5889-46C1-9DE7-9EAAB96F949D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F7BC6DD-5889-46C1-9DE7-9EAAB96F949D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F7BC6DD-5889-46C1-9DE7-9EAAB96F949D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F7BC6DD-5889-46C1-9DE7-9EAAB96F949D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -737,6 +753,10 @@ Global
 		{3D4F1DDC-C09E-46A4-B77C-9A1533B64C3C} = {F70CEB3B-DDDA-4D9E-B419-25CC9304BBF4}
 		{EEC3677E-4564-48D2-AF96-76EE65C45A94} = {F70CEB3B-DDDA-4D9E-B419-25CC9304BBF4}
 		{18853474-590E-4CBE-8157-5800519E29C6} = {F70CEB3B-DDDA-4D9E-B419-25CC9304BBF4}
+		{1FCCB7FD-1120-48C0-BB32-34B6AB26F5DD} = {E97322CC-CE84-4B48-ABB4-87D0DE1C3350}
+		{E97322CC-CE84-4B48-ABB4-87D0DE1C3350} = {12607996-382E-442B-8A1B-3A225145A583}
+		{82ECC261-1ECE-4098-91C5-76BB4ED247BC} = {12607996-382E-442B-8A1B-3A225145A583}
+		{9F7BC6DD-5889-46C1-9DE7-9EAAB96F949D} = {82ECC261-1ECE-4098-91C5-76BB4ED247BC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28315BFD-90E7-4E14-A2EA-F3D23AF4126F}
