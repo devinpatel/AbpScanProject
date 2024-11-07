@@ -11,7 +11,8 @@
 
     <ItemGroup>
         
-        <ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.VirtualFileSystem\Volo.Abp.VirtualFileSystem.csproj" />
+        <!--<ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.VirtualFileSystem\Volo.Abp.VirtualFileSystem.csproj" />-->
+			<PackageReference Include="Volo.Abp.VirtualFileSystem" Version="8.3.2" />
     </ItemGroup>
 
     <ItemGroup>

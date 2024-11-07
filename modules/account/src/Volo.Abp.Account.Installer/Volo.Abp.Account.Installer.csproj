@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <Import Project="..\..\..\..\configureawait.props" />
     <Import Project="..\..\..\..\common.props" />
@@ -8,11 +8,6 @@
         <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
         <RootNamespace />
     </PropertyGroup>
-
-    <ItemGroup>
-        
-        <ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.VirtualFileSystem\Volo.Abp.VirtualFileSystem.csproj" />
-    </ItemGroup>
 
     <ItemGroup>
       <None Remove="..\..\Volo.Abp.Account.abpmdl" />
@@ -25,6 +20,10 @@
             <Pack>true</Pack>
             <PackagePath>content\</PackagePath>
         </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Volo.Abp.VirtualFileSystem" Version="8.3.2" />
     </ItemGroup>
 
 </Project>
