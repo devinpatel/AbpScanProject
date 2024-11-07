@@ -11,6 +11,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Caching.Memory" />
     <PackageReference Include="Slugify.Core" />
+    <PackageReference Include="System.Text.Json" />
     <PackageReference Include="Unidecode.NET" />
   </ItemGroup>
 

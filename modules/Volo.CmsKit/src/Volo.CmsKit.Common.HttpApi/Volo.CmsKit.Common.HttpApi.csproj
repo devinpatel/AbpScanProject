@@ -10,6 +10,7 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.Extensions.Caching.Memory" />
+        <PackageReference Include="System.Text.Json" />
         <PackageReference Include="Volo.Abp.AspNetCore.Mvc" VersionOverride="8.3.2" />
         <ProjectReference Include="..\Volo.CmsKit.Common.Application.Contracts\Volo.CmsKit.Common.Application.Contracts.csproj" />
     </ItemGroup>

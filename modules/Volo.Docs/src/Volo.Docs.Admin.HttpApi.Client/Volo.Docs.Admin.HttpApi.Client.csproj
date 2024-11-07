@@ -9,6 +9,8 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Volo.Docs.Admin.Application.Contracts\Volo.Docs.Admin.Application.Contracts.csproj" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" />
+    <PackageReference Include="System.Text.Json" />
     <PackageReference Include="Volo.Abp.Http.Client" VersionOverride="8.3.2" />
   </ItemGroup>
   <ItemGroup>

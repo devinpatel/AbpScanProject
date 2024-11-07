@@ -10,6 +10,8 @@
 
     <ItemGroup>
         <ProjectReference Include="..\Volo.Abp.SettingManagement.Domain.Shared\Volo.Abp.SettingManagement.Domain.Shared.csproj" />
+        <PackageReference Include="Microsoft.Extensions.Caching.Memory" />
+        <PackageReference Include="System.Text.Json" />
         <PackageReference Include="Volo.Abp.Ddd.Application.Contracts" VersionOverride="8.3.2" />
         <PackageReference Include="Volo.Abp.Authorization.Abstractions" VersionOverride="8.3.2" />
     </ItemGroup>

@@ -11,6 +11,10 @@
 
     <ItemGroup>
         
+        <PackageReference Include="Microsoft.Extensions.Caching.Memory" />
+        
+        <PackageReference Include="System.Text.Json" />
+        
         <PackageReference Include="Volo.Abp.VirtualFileSystem" VersionOverride="8.3.2" />
     </ItemGroup>
 

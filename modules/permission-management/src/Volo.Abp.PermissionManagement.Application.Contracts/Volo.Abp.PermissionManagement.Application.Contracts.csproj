@@ -16,6 +16,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Volo.Abp.PermissionManagement.Domain.Shared\Volo.Abp.PermissionManagement.Domain.Shared.csproj" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.1" />
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
     <!--<ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.Authorization.Abstractions\Volo.Abp.Authorization.Abstractions.csproj" />-->
     <!--<ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.Ddd.Application.Contracts\Volo.Abp.Ddd.Application.Contracts.csproj" />-->
 		<PackageReference Include="Volo.Abp.Authorization.Abstractions" Version="8.3.2" />

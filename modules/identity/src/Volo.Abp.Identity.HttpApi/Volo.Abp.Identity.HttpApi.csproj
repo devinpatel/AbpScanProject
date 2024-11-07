@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Volo.Abp.Identity.Application.Contracts\Volo.Abp.Identity.Application.Contracts.csproj" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.1" />
     <!--<ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.AspNetCore.Mvc\Volo.Abp.AspNetCore.Mvc.csproj" />-->
 		<PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="8.3.2" />
   </ItemGroup>
