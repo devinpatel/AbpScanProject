@@ -10,9 +10,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Volo.Abp.BackgroundJobs.Domain.Shared\Volo.Abp.BackgroundJobs.Domain.Shared.csproj" />
-    <ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.AutoMapper\Volo.Abp.AutoMapper.csproj" />
-    <ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.Ddd.Domain\Volo.Abp.Ddd.Domain.csproj" />
-    <ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.BackgroundJobs\Volo.Abp.BackgroundJobs.csproj" />
+    <!--<ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.AutoMapper\Volo.Abp.AutoMapper.csproj" />-->
+    <!--<ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.Ddd.Domain\Volo.Abp.Ddd.Domain.csproj" />-->
+    <!--<ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.BackgroundJobs\Volo.Abp.BackgroundJobs.csproj" />-->
+		<PackageReference Include="Volo.Abp.AutoMapper" Version="8.3.2" />
+		<PackageReference Include="Volo.Abp.Ddd.Domain" Version="8.3.2" />
+		<PackageReference Include="Volo.Abp.BackgroundJobs" Version="8.3.2" />
   </ItemGroup>
 
 </Project>
