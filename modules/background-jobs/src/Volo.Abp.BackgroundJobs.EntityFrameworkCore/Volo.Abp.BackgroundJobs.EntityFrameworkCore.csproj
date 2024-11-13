@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Volo.Abp.BackgroundJobs.Domain\Volo.Abp.BackgroundJobs.Domain.csproj" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.1" />
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
     <!--<ProjectReference Include="..\..\..\..\framework\src\Volo.Abp.EntityFrameworkCore\Volo.Abp.EntityFrameworkCore.csproj" />-->
 		<PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="8.3.2" />
   </ItemGroup>
